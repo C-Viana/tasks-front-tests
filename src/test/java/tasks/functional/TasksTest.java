@@ -22,7 +22,7 @@ public class TasksTest {
 //		WebDriver driver = new ChromeDriver();
 		ChromeOptions chromeOptions = new ChromeOptions();
 		chromeOptions.setCapability("platformName", "Windows");
-		WebDriver driver = new RemoteWebDriver(new URL("http://192.168.56.1:4444"), chromeOptions);
+		WebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444"), chromeOptions);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("http://localhost:8901/tasks/");
 		return driver;
